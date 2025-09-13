@@ -1,0 +1,21 @@
+{
+  "name": "swapi-stepci",
+  "version": "1.0.0",
+  "description": "Project that integrates a public API with StepCI to create automated tests using data from the Star Wars universe",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandjb/swapi-stepci.git"
+  },
+  "keywords": [],
+  "author": "ingleandrobarros@outlook.com",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/leandjb/swapi-stepci/issues"
+  },
+  "homepage": "https://github.com/leandjb/swapi-stepci#readme"
+}
