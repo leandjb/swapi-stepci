@@ -11,11 +11,14 @@
     "url": "git+https://github.com/leandjb/swapi-stepci.git"
   },
   "keywords": [],
-  "author": "ingleandrobarros@outlook.com",
+  "author": "",
   "license": "MIT",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/leandjb/swapi-stepci/issues"
   },
-  "homepage": "https://github.com/leandjb/swapi-stepci#readme"
+  "homepage": "https://github.com/leandjb/swapi-stepci#readme",
+  "dependencies": {
+    "stepci": "^2.8.2"
+  }
 }
