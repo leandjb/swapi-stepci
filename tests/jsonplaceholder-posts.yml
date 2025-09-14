@@ -19,4 +19,6 @@ tests:
                     userId: 1
                 captures:
                     id:
-                      jsonpath: $.id
+                      jsonpath: $.id\
+                check:
+                    status: 201
