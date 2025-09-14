@@ -4,7 +4,7 @@
   "description": "Project that integrates a public API with StepCI to create automated tests using data from the Star Wars universe",
   "main": "index.js",
   "scripts": {
-    "test": "npx jest"
+    "test": "npx stepci run -v"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,22 @@
+version: "1.0"
+name: jsonplaceholder workflow
+env:
+    host: jsonplaceholder.typicode.com
+    resource: posts
+tests:
+    example:
+        name: example-test
+        steps:
+            - name: Example-step
+              http:
+                url: https://${{env.host}}/${{env.resource}}
+                method: POST
+                headers:
+                    Content-Type: application/json
+                json:
+                    title: Hello by StepCI!
+                    body: This a body content sample
+                    userId: 1
+                captures:
+                    id:
+                      jsonpath: $.id
