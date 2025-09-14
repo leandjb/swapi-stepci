@@ -1,0 +1,18 @@
+version: "1.0"
+name: SWAPI Workflow People
+env:
+    host: swapi.info/api/
+    resource: people
+
+tests:
+    example:
+        steps:
+            - name: request /people
+              http:
+                url: https://${{env.host}}/${{env.resource}}
+                method: GET
+                headers:
+                    Content-Type: application/json
+                check:
+                    status: 200
+
