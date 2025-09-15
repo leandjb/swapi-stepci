@@ -1,18 +1,46 @@
-version: "1.0"
-name: SWAPI Workflow People
+version: "1.1"
+name: SWAPI Validations for Characters
+
 env:
-    host: swapi.info/api/
-    resource: people
+  host: swapi.online/api
+  resource: characters
 
 tests:
-    example:
-        steps:
-            - name: request /people
-              http:
-                url: https://${{env.host}}/${{env.resource}}
-                method: GET
-                headers:
-                    Content-Type: application/json
-                check:
-                    status: 200
+  get-characters-list:
+    steps:
+      - name: GET characters
+        http:
+          url: https://${{env.host}}/${{env.resource}}
+          method: GET
+          check:
+            status: 200
+            schema:
+              type: array
+              minItems: 1
+              items:
+                type: object
+                required:
+                  - id
+                  - name
+                  - gender
+                  - skin_color
+                  - hair_color
+                  - height
+                  - eye_color
+                  - mass
+                  - homeworld
+                  - birth_year
+                  - species_id
+                properties:
+                  id:         { type: number }
+                  name:       { type: string }
+                  gender:     { type: string }
+                  skin_color: { type: string }
+                  hair_color: { type: string }
+                  height:     { type: string }
+                  eye_color:  { type: string }
+                  mass:       { type: string }
+                  homeworld:  { type: number }
+                  birth_year: { type: string }
+                  species_id: { type: number }
 

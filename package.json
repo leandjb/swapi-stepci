@@ -1,7 +1,7 @@
 {
   "name": "swapi-stepci",
-  "version": "1.0.0",
-  "description": "Project that integrates a public API with StepCI to create automated tests using data from the Star Wars universe",
+  "version": "1.0.1",
+  "description": "Project that integrates a public SWAPI with StepCI to create automated tests using data from the Star Wars universe",
   "main": "index.js",
   "scripts": {
     "test": "npx stepci run -v"
@@ -20,8 +20,5 @@
   "homepage": "https://github.com/leandjb/swapi-stepci#readme",
   "dependencies": {
     "stepci": "2.8.2"
-  },
-  "devDependencies": {
-    "@stepci/runner": "2.0.7"
   }
 }
