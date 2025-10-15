@@ -17,13 +17,26 @@ tests:
             Accept: application/json
           captures:
             species_id: { jsonpath: $.species_id }
-            homeworld:  { jsonpath: $.homeworld }
+            homeworld: { jsonpath: $.homeworld }
           check:
             status: 200
             responseTime: < 400
             schema:
               type: object
-              required: [id, name, gender, skin_color, hair_color, height, eye_color, mass, homeworld, birth_year, species_id]
+              required:
+                [
+                  id,
+                  name,
+                  gender,
+                  skin_color,
+                  hair_color,
+                  height,
+                  eye_color,
+                  mass,
+                  homeworld,
+                  birth_year,
+                  species_id,
+                ]
               properties:
                 id: { type: integer }
                 name: { type: string }
@@ -52,13 +65,26 @@ tests:
             Accept: application/json
           captures:
             species_id: { jsonpath: $.species_id }
-            homeworld:  { jsonpath: $.homeworld }
+            homeworld: { jsonpath: $.homeworld }
           check:
             status: 200
             responseTime: < 400
             schema:
               type: object
-              required: [id, name, gender, skin_color, hair_color, height, eye_color, mass, homeworld, birth_year, species_id]
+              required:
+                [
+                  id,
+                  name,
+                  gender,
+                  skin_color,
+                  hair_color,
+                  height,
+                  eye_color,
+                  mass,
+                  homeworld,
+                  birth_year,
+                  species_id,
+                ]
               properties:
                 id: { type: integer }
                 name: { type: string }
@@ -76,4 +102,3 @@ tests:
               $.homeworld: 13
               $.name: "Darth Vader"
               $.height: "202"
-

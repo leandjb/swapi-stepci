@@ -32,15 +32,14 @@ tests:
                   - birth_year
                   - species_id
                 properties:
-                  id:         { type: number }
-                  name:       { type: string }
-                  gender:     { type: string }
+                  id: { type: number }
+                  name: { type: string }
+                  gender: { type: string }
                   skin_color: { type: string }
                   hair_color: { type: string }
-                  height:     { type: string }
-                  eye_color:  { type: string }
-                  mass:       { type: string }
-                  homeworld:  { type: number }
+                  height: { type: string }
+                  eye_color: { type: string }
+                  mass: { type: string }
+                  homeworld: { type: number }
                   birth_year: { type: string }
                   species_id: { type: number }
-
